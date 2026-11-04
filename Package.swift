@@ -2,11 +2,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "Still",
+    name: "Image-Eddie",
     platforms: [.macOS(.v14)],
-    products: [.executable(name: "Still", targets: ["Still"])],
+    products: [.executable(name: "Image-Eddie", targets: ["ImageEddie"])],
     targets: [
-        .executableTarget(name: "Still", path: "Sources/Still")
+        .executableTarget(name: "ImageEddie", path: "Sources/ImageEddie")
     ],
     swiftLanguageModes: [.v5]
 )

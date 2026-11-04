@@ -73,7 +73,7 @@ struct InspectorHeading: View {
     }
 }
 
-struct StillMark: View {
+struct EddieMark: View {
     private static let artwork: NSImage = {
         let bundled = Bundle.main.url(forResource: "EddieCharacter", withExtension: "png")
         let development = URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingLastPathComponent()
@@ -84,6 +84,6 @@ struct StillMark: View {
     var body: some View {
         Image(nsImage: Self.artwork).resizable().interpolation(.high).scaledToFit()
             .frame(width: size, height: size)
-            .accessibilityLabel("Still's Eddie character logo")
+            .accessibilityLabel("Image-Eddie character logo")
     }
 }

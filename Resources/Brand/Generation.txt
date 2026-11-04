@@ -1,7 +1,9 @@
-Eddie character branding for Still
+Eddie character branding for Image-Eddie
 Tool: built-in image_gen (transparent PNG output)
 Reference: Eddie Menuek, Friends season 2, as played by Adam Goldberg.
 Reference images were visually checked in the built-in browser; no show still was copied into the assets.
+
+The artwork was generated under the development title Still. The original prompts below are preserved verbatim.
 
 Character prompt:
 Use case: logo-brand
@@ -31,5 +33,5 @@ No text, letters, wordmarks, props, watermark, extra characters, or other elemen
 Final files:
 Resources/Brand/EddieCharacter.png — transparent character logo.
 Resources/Brand/EddieIconMaster.png — opaque square master used by scripts/make-icon.swift.
-build/StillEddie.iconset/ — generated rounded icons at every standard size.
-build/StillEddie.icns — packaged application icon.
+build/ImageEddie.iconset/ — generated rounded icons at every standard size.
+build/ImageEddie.icns — packaged application icon.

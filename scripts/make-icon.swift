@@ -9,7 +9,7 @@ guard let artwork = NSImage(contentsOf: source) else {
     fputs("Missing Eddie icon master: \(source.path)\n", stderr)
     exit(1)
 }
-let folder = destination.appendingPathComponent("StillEddie.iconset")
+let folder = destination.appendingPathComponent("ImageEddie.iconset")
 try FileManager.default.createDirectory(at: folder, withIntermediateDirectories: true)
 
 for size in [16, 32, 128, 256, 512] {

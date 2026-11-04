@@ -2,12 +2,12 @@ import SwiftUI
 import AppKit
 
 @main
-struct StillApp: App {
+struct ImageEddieApp: App {
     @StateObject private var editor = EditorModel()
     @NSApplicationDelegateAdaptor(AppDelegate.self) private var delegate
 
     var body: some Scene {
-        Window("Still", id: "editor") {
+        Window("Image-Eddie", id: "editor") {
             EditorView(model: editor)
                 .onAppear { delegate.editor = editor }
                 .onOpenURL { editor.open($0) }
@@ -52,7 +52,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     weak var editor: EditorModel?
     func applicationDidFinishLaunching(_ notification: Notification) {
         NSApp.setActivationPolicy(.regular)
-        if let iconURL = Bundle.main.url(forResource: "StillEddie", withExtension: "icns"), let icon = NSImage(contentsOf: iconURL) {
+        if let iconURL = Bundle.main.url(forResource: "ImageEddie", withExtension: "icns"), let icon = NSImage(contentsOf: iconURL) {
             NSApp.applicationIconImage = icon
         }
         NSApp.activate(ignoringOtherApps: true)

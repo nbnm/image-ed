@@ -1,6 +1,6 @@
-<img src="docs/media/icon.png" width="96" height="96" align="right" alt="Still app icon">
+<img src="docs/media/icon.png" width="96" height="96" align="right" alt="Image-Eddie app icon">
 
-# Still
+# Image-Eddie
 
 A simple, native macOS image editor for **PNG, JPEG, and SVG**. Add text and image overlays, crop, resize, adjust colors, and export. Everything happens on your Mac.
 
@@ -28,17 +28,17 @@ Check the selected compiler with `swift --version`; it should report Swift 6 or 
 git clone https://github.com/nbnm/image-ed.git
 cd image-ed
 ./scripts/build-app.sh
-open build/Still.app
+open build/Image-Eddie.app
 ```
 
-The build script creates **`build/Still.app`**, including its character artwork, macOS icon, and sample SVG. It signs the app locally and builds for the architecture of your Mac.
+The build script creates **`build/Image-Eddie.app`**, including its character artwork, macOS icon, and sample SVG. It signs the app locally and builds for the architecture of your Mac.
 
-To keep the app installed, drag `build/Still.app` into your **Applications** folder. Or install it in your own Applications folder from the terminal:
+To keep the app installed, drag `build/Image-Eddie.app` into your **Applications** folder. Or install it in your own Applications folder from the terminal:
 
 ```sh
 mkdir -p "$HOME/Applications"
-ditto build/Still.app "$HOME/Applications/Still.app"
-open "$HOME/Applications/Still.app"
+ditto build/Image-Eddie.app "$HOME/Applications/Image-Eddie.app"
+open "$HOME/Applications/Image-Eddie.app"
 ```
 
 These instructions build and sign the app on your own Mac. Packaging it for other people's Macs requires an appropriate Apple Developer signing and notarization process.
@@ -85,7 +85,7 @@ Click **Export** or press **⇧⌘E**. Choose your format, click **Export image*
 
 ## Editing and shortcuts
 
-Edits remain in memory until you export. The original file is not overwritten automatically, and Still warns before discarding unexported changes. Undo and redo work across tools, including image overlay changes.
+Edits remain in memory until you export. The original file is not overwritten automatically, and Image-Eddie warns before discarding unexported changes. Undo and redo work across tools, including image overlay changes.
 
 | Shortcut | Action |
 | --- | --- |
@@ -111,7 +111,7 @@ For a faster debug build:
 
 ```sh
 ./scripts/build-app.sh --debug
-open build/Still.app
+open build/Image-Eddie.app
 ```
 
 Run the verification suite:

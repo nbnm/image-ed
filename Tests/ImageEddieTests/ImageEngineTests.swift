@@ -4,7 +4,7 @@ import AppKit
 final class ImageEngineTests {
     private var temporary: URL!
     func setUpWithError() throws {
-        temporary = FileManager.default.temporaryDirectory.appendingPathComponent("StillTests-\(UUID())")
+        temporary = FileManager.default.temporaryDirectory.appendingPathComponent("ImageEddieTests-\(UUID())")
         try FileManager.default.createDirectory(at: temporary, withIntermediateDirectories: true)
     }
     func tearDownWithError() throws { try FileManager.default.removeItem(at: temporary) }
@@ -427,7 +427,7 @@ private func throwsError<T>(_ action: @autoclosure () throws -> T, file: StaticS
 
 @main
 @MainActor
-struct StillChecks {
+struct ImageEddieChecks {
     static func main() async {
         _ = NSApplication.shared
         let checks = ImageEngineTests()

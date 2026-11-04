@@ -78,8 +78,8 @@ struct EditorView: View {
 
     private var header: some View {
         HStack(spacing: 12) {
-            StillMark(size: 27).accessibilityHidden(true)
-            Text("Still").font(.system(size: 17, weight: .semibold)).tracking(-0.5)
+            EddieMark(size: 27).accessibilityHidden(true)
+            Text("Image-Eddie").font(.system(size: 17, weight: .semibold)).tracking(-0.5)
             Text("/").foregroundStyle(Theme.line)
             Text("Image editor").font(.system(size: 12)).foregroundStyle(Theme.secondary)
             Spacer()
@@ -138,7 +138,7 @@ struct WelcomeView: View {
         VStack(spacing: 0) {
             Spacer()
             VStack(spacing: 22) {
-                StillMark(size: 82).padding(.bottom, 3)
+                EddieMark(size: 82).padding(.bottom, 3)
                 VStack(spacing: 10) {
                     Text("Open an image").font(.system(size: 29, weight: .semibold)).tracking(-0.9)
                     Text("Drop a PNG, JPEG, or SVG here to get started.")

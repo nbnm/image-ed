@@ -8,12 +8,12 @@ if ! command -v ffmpeg >/dev/null; then
 fi
 mkdir -p build/docs-capture docs/media
 swiftc -swift-version 5 -parse-as-library \
-    Sources/Still/ImageTypes.swift Sources/Still/ImageRenderer.swift \
-    Sources/Still/SVGColors.swift Sources/Still/EditorModel.swift \
-    Sources/Still/Theme.swift Sources/Still/CanvasView.swift \
-    Sources/Still/ImageOverlayViews.swift Sources/Still/InspectorView.swift \
-    Sources/Still/ExportView.swift Sources/Still/EditorView.swift \
-    Sources/Still/WindowSetup.swift scripts/capture-demos.swift \
+    Sources/ImageEddie/ImageTypes.swift Sources/ImageEddie/ImageRenderer.swift \
+    Sources/ImageEddie/SVGColors.swift Sources/ImageEddie/EditorModel.swift \
+    Sources/ImageEddie/Theme.swift Sources/ImageEddie/CanvasView.swift \
+    Sources/ImageEddie/ImageOverlayViews.swift Sources/ImageEddie/InspectorView.swift \
+    Sources/ImageEddie/ExportView.swift Sources/ImageEddie/EditorView.swift \
+    Sources/ImageEddie/WindowSetup.swift scripts/capture-demos.swift \
     -o build/CaptureDemos
 build/CaptureDemos
 for demo in text overlays crop-color export; do
