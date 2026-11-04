@@ -1,0 +1,35 @@
+Eddie character branding for Still
+Tool: built-in image_gen (transparent PNG output)
+Reference: Eddie Menuek, Friends season 2, as played by Adam Goldberg.
+Reference images were visually checked in the built-in browser; no show still was copied into the assets.
+
+Character prompt:
+Use case: logo-brand
+Asset type: transparent PNG character mascot for a simple native macOS image editor named Still.
+Primary request: Remake Eddie Menuek from the sitcom Friends, as played by young Adam Goldberg in season 2, as a distinctive illustrated character mascot. This is Eddie, Chandler's temporary roommate, not Chandler or Joey.
+Subject: head and a little of the shoulders, thick dark-brown hair swept upward and backward in a high slightly wavy 1990s quiff with shorter sides, strong expressive dark eyebrows, large brown eyes, prominent long nose, thin dark mustache and small short pointed goatee. Olive-light warm skin. Olive-green casual overshirt over a muted brown crew-neck T-shirt. Recognizable Eddie facial proportions, one eyebrow slightly raised and a playful off-center half-smile.
+Style/medium: polished hand-drawn character logo, confident thick dark-charcoal outlines, simplified bold shapes, restrained flat shading, warm natural skin and forest/sage greens, charming expressive caricature. Designed to stay legible at 32–64 px; prioritize silhouette, brows, nose and goatee. Not photorealistic, not a generic bearded man, not a 3D toy.
+Composition/framing: one centered compact front-facing portrait in a square 1024x1024 canvas, the whole head including hair and cropped shoulders completely visible; character fills about 86% of the canvas height with a clean small safety margin. Clean cutout edges and fully transparent background.
+Text: none.
+Constraints: no text, letters, wordmarks, frames, badges, props, watermark, Friends logo, or extra characters. Actual transparent alpha outside the character; no baked checkerboard or white backdrop.
+
+Initial icon exploration (not used in the app):
+Use case: logo-brand
+Asset type: finished macOS application icon, square PNG with transparent outer corners.
+Edit target: the supplied Eddie character portrait. Keep exactly the same character identity, pose, face, expression, swept-back dark hair, mustache, goatee, clothes, linework, and illustration style. This is Eddie from Friends remade as an illustrated mascot.
+Primary request: turn this same illustration into a polished macOS Dock icon for Still, a simple image editor.
+Composition: one centered character portrait on one large pale sage rounded-square tile (#DCE5D5), with very gently dimensional edges and a restrained thin darker-sage inner rim. Square 1024x1024 image. Tile about 92% of canvas width with large macOS-style rounded corners; genuine alpha transparency outside the tile. Scale the portrait so the full hair fits comfortably near the top and the green shirt and shoulders finish just inside the bottom edge. Head should be dominant and readable at 32px, not a small character floating in a large badge. Keep the face warm and clear against the sage tile. The illustration should fill roughly 85% of the tile height without clipping the hair.
+Constraints: no words, typography, letters, symbols, camera, pencil, crop handles, extra characters, watermark, white rectangle backdrop, or mockup scene. No glow. Only the same character and one rounded square backdrop. Preserve alpha outside the tile.
+
+Final icon master prompt (used by the app):
+Use case: logo-brand.
+Create the final opaque master artwork for a macOS app icon, using the supplied Eddie-from-Friends cartoon portrait as the character reference. Preserve the character's exact identity and illustration style: swept-back dark wavy hair, strong eyebrows, raised eyebrow, long nose, mustache, little goatee, playful expression, green overshirt and brown T-shirt. Do not redesign the face.
+IMPORTANT OUTPUT: a completely OPAQUE square image. NO transparency, NO alpha cutout, NO rounded-corner cutout, NO border outside the artwork, NO checkered or black areas, NO dust, speckles, noise, texture, shadows, white fringes, artifacts, or missing patches. Fill the ENTIRE square canvas edge-to-edge with one perfectly clean flat pale sage background color #DCE5D5. The artwork must be uninterrupted opaque color even at every corner and edge.
+Place one centered head-and-shoulders portrait on that full-square pale-sage background, with all hair visible and the shoulders ending neatly inside the canvas. The portrait fills about 82% of the canvas height with even breathing room. The face must be large enough for a Dock icon at 32 pixels. Flat graphic color, crisp bold outlines, slight illustrated shading on the character only. No tile border or icon frame; the macOS build system will mask the square later.
+No text, letters, wordmarks, props, watermark, extra characters, or other elements. Deliver one clean 1024x1024 opaque square portrait image.
+
+Final files:
+Resources/Brand/EddieCharacter.png — transparent character logo.
+Resources/Brand/EddieIconMaster.png — opaque square master used by scripts/make-icon.swift.
+build/StillEddie.iconset/ — generated rounded icons at every standard size.
+build/StillEddie.icns — packaged application icon.
